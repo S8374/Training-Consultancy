@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "6784f16fb698cd99331e7ea2",
+    "title": "USA Student Visa Assistance",
+    "img": "https://www.istockphoto.com/photo/student-holding-passport-and-smiling-gm1398402282-450520045",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae fugiat itaque ex nihil quod exercitationem vel commodi necessitatibus aspernatur.",
+    "facility": [
+      {
+        "name": "Comprehensive Guidance",
+        "details": "Providing complete assistance from documentation to interview preparation."
+      },
+      {
+        "name": "24/7 Support",
+        "details": "Dedicated support to handle queries and resolve visa-related concerns."
+      },
+      {
+        "name": "Pre-departure Assistance",
+        "details": "Helping students prepare for life in the USA with tailored advice."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea3",
+    "title": "Work Abroad Opportunities: Canada",
+    "img": "https://media.istockphoto.com/id/1149217196/photo/farmer-controlling-tomato-seedlings-with-digital-tablet-in-the-greenhouse.jpg?s=612x612&w=0&k=20&c=uvhURLV9QX-9dVzKf4gTF8IyTizFjWMl8LO0DD2pIec=",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente reiciendis voluptatem maxime molestias laborum?",
+    "facility": [
+      {
+        "name": "Job Placement Services",
+        "details": "Connect with top employers in Canada for better job opportunities."
+      },
+      {
+        "name": "Skill Assessment",
+        "details": "Ensuring your qualifications meet the Canadian job market's requirements."
+      },
+      {
+        "name": "Application Process Simplified",
+        "details": "Ease the complexity of work visa applications with our expert guidance."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea4",
+    "title": "Consultancy for Australia Immigration",
+    "img": "https://media.istockphoto.com/id/1454530428/photo/group-of-business-persons-talking-in-the-office.jpg?s=612x612&w=0&k=20&c=eqJRlvK8XeBD69f-ZwVae6CxK7OJmLxTlwVsQhF8LcA=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero at repellendus quia iste nesciunt reprehenderit!",
+    "facility": [
+      {
+        "name": "Visa Counseling",
+        "details": "Expert advice on choosing the right visa category for Australian immigration."
+      },
+      {
+        "name": "Settlement Services",
+        "details": "Guidance on settling in Australia, including housing and financial planning."
+      },
+      {
+        "name": "Interview Preparation",
+        "details": "Mock sessions and tips to excel in your visa interview."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea5",
+    "title": "Germany Work Visa Assistance",
+    "img": "https://media.istockphoto.com/id/1152163935/photo/reichstag-building-seat-of-the-german-parliament.jpg?s=612x612&w=0&k=20&c=m3-rqLWdw7VBAnTOxKJkzAjLXXG55uNsftI1P-jFxHQ=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi distinctio adipisci fugiat rem dolore voluptatibus?",
+    "facility": [
+      {
+        "name": "Job Portal Access",
+        "details": "Exclusive access to job openings in Germany for skilled professionals."
+      },
+      {
+        "name": "Resume Optimization",
+        "details": "Crafting the perfect CV to match German employer standards."
+      },
+      {
+        "name": "Language Support",
+        "details": "Basic German language training to ease your transition."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea6",
+    "title": "Student Visa: France",
+    "img": "https://media.istockphoto.com/id/824990862/photo/flag-of-france-at-arc-de-triomphe.jpg?s=612x612&w=0&k=20&c=u7q7RzIYmvA8XqgqmMpFebIKItHlb3sxjB-be7g31AE=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam voluptas quos ducimus ad.",
+    "facility": [
+      {
+        "name": "University Shortlisting",
+        "details": "Helping you select the best universities for your preferred course."
+      },
+      {
+        "name": "Scholarship Assistance",
+        "details": "Guiding you to secure scholarships and financial aid."
+      },
+      {
+        "name": "Travel Guidance",
+        "details": "Advice on travel arrangements and settling in France."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea7",
+    "title": "UK Study and Work Visa",
+    "img": "https://www.istockphoto.com/photo/british-flag-big-ben-and-houses-of-parliament-london-gm616242056-107137771",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sunt suscipit inventore quidem mollitia pariatur?",
+    "facility": [
+      {
+        "name": "Visa Application Support",
+        "details": "Assistance with both study and work visa applications."
+      },
+      {
+        "name": "Interview Prep",
+        "details": "Tips and strategies to crack your UK visa interviews."
+      },
+      {
+        "name": "Post-Visa Services",
+        "details": "Support with job placements and academic opportunities in the UK."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea8",
+    "title": "New Zealand Study Visa",
+    "img": "https://media.istockphoto.com/id/535204076/photo/reflections-in-lake-matheson.jpg?s=612x612&w=0&k=20&c=Ycjk7CiySaHGAMNczp1XY7sNpLYKHx4KyJG10DkO5aY=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugit quidem aliquid praesentium voluptates!",
+    "facility": [
+      {
+        "name": "Guaranteed Documentation Support",
+        "details": "Ensuring your application is error-free and compliant."
+      },
+      {
+        "name": "University Coordination",
+        "details": "Acting as a bridge between you and the university for smooth admissions."
+      },
+      {
+        "name": "Affordable Fee Structure",
+        "details": "Guidance on affordable education options in New Zealand."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7ea9",
+    "title": "Singapore Work Visa",
+    "img": "https://media.istockphoto.com/id/505773333/photo/singapore-sky-line.jpg?s=612x612&w=0&k=20&c=Epl7R75_ljUw2d7L4cXiL5jMZTNAgC_xTdeRAsJO0dY=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque consequatur voluptatibus molestias tempora repellendus.",
+    "facility": [
+      {
+        "name": "Industry Insights",
+        "details": "Providing an overview of in-demand jobs in Singapore."
+      },
+      {
+        "name": "Simplified Process",
+        "details": "Handling every aspect of the work visa process on your behalf."
+      },
+      {
+        "name": "Long-term Settlement Advice",
+        "details": "Guiding you on living and working in Singapore for the long term."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7eaa",
+    "title": "Study Abroad: Japan",
+    "img": "https://media.istockphoto.com/id/1228962068/photo/colorful-autumn-season-and-mountain-fuji-with-morning-fog-and-red-leaves-at-lake-kawaguchiko.jpg?s=612x612&w=0&k=20&c=fsAoWZPMPv0iqwmGLVWginjP_jk3-tVsBCg4ym-e_Js=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fuga reiciendis adipisci mollitia laborum animi.",
+    "facility": [
+      {
+        "name": "Visa Application Support",
+        "details": "Step-by-step guidance on the Japanese student visa process."
+      },
+      {
+        "name": "Cultural Training",
+        "details": "Prepare for Japanese culture and etiquette before you travel."
+      },
+      {
+        "name": "Accommodation Assistance",
+        "details": "Helping you find affordable housing near your university."
+      }
+    ]
+  },
+  {
+    "_id": "6784f16fb698cd99331e7eab",
+    "title": "Canada Work Opportunities",
+    "img": "https://media.istockphoto.com/id/1178852373/photo/canadian-flag-flying-over-old-quebec-city.jpg?s=612x612&w=0&k=20&c=0dsOXraklB5DCLYeYVpmDxfgquLlVSalCcHacs0LgTY=",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus exercitationem quidem veniam, obcaecati cum omnis!",
+    "facility": [
+      {
+        "name": "Job Market Insights",
+        "details": "Analyzing the Canadian job market to align your skills with demand."
+      },
+      {
+        "name": "Professional Networking",
+        "details": "Connecting you with employers and recruiters in Canada."
+      },
+      {
+        "name": "Legal Assistance",
+        "details": "Ensuring your work permits and documentation are valid and up-to-date."
+      }
+    ]
+  }
+]
