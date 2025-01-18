@@ -8,6 +8,7 @@ import Hero from "../Shared/Hero/Hero";
 export default function RootHome() {
     return (
         <div>
+            
             <Hero />
             <Testimonals />
             <Services />

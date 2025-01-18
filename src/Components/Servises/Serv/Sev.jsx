@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import WhyChooseUs from "./Serv1";
 import { UseServices } from "../../../Hooks/useServices";
+import ScrollToTop from "../../Scroll/ScrollTop";
 
 export default function Serv() {
   const { id } = useParams();
@@ -37,6 +38,7 @@ export default function Serv() {
 
     return (
       <div>
+        <ScrollToTop/>
         <Helmet>
           <title>{service.title} | Our Services</title>
           <meta name="description" content={service.description || "Service details"} />

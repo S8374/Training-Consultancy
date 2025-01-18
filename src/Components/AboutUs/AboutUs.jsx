@@ -2,10 +2,13 @@ import { Helmet } from "react-helmet-async";
 import AboutServises from "./AboutServices/AboutServises";
 import Contact from "./Contact/Contact";
 import RequestSend from "./RequestSend/RequestSend";
+import ScrollToTop from "../Scroll/ScrollTop";
+
 
 export default function AboutUs() {
   return (
     <div>
+   
       {/* SEO Helmet */}
       <Helmet>
         <title>About Us - Our Information</title>
@@ -18,6 +21,7 @@ export default function AboutUs() {
       </Helmet>
 
       <header>
+
         {/* Background Section */}
         <div
           className="w-full bg-center bg-cover h-[60vh]"
@@ -25,7 +29,8 @@ export default function AboutUs() {
             backgroundImage:
               "url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80')",
           }}
-        >
+        >   
+        <ScrollToTop/>
           <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
             <div className="text-center">
               {/* Main Title */}

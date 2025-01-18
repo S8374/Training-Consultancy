@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "../Components/Home/Shared/Header/Header";
 import SubHeader from "../Components/Home/Shared/SubHeader/SubHeader";
 import Footer from "../Components/Home/Shared/Footer/Footer";
+import ScrollToTop from "../Components/Scroll/ScrollTop";
 
 export default function Root() {
   return (
@@ -14,7 +15,11 @@ export default function Root() {
       </Helmet>
       <SubHeader />
       <Header />
-      <Outlet />
+       <div>
+        <ScrollToTop/>
+       <Outlet />
+       </div>
+  
       <Footer />
     </div>
   );
