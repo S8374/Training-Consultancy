@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const UseServices = () => {
   const fetchServices = async () => {
-    const { data } = await axios.get('https://training-consultancy-server.vercel.app/services');
+    const { data } = await axios.get(`${import.meta.env.VITE_LIVE_LINK}/services`);
     return data;
   };
 
@@ -12,3 +12,5 @@ export const UseServices = () => {
     queryFn: fetchServices,
   });
 };
+
+//https://training-consultancy-server.vercel.app/services

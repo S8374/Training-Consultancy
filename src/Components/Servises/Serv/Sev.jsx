@@ -3,11 +3,12 @@ import { Helmet } from "react-helmet-async";
 import WhyChooseUs from "./Serv1";
 import { UseServices } from "../../../Hooks/useServices";
 import ScrollToTop from "../../Scroll/ScrollTop";
+import { UseAuth } from "../../../Hooks/useAuth";
 
 export default function Serv() {
   const { id } = useParams();
   const { data: services, isLoading, isError, error } = UseServices();
-
+  const{user}= UseAuth();
   // Fallback image if the service does not have an image
   const defaultImage =
     "https://media.istockphoto.com/id/1453719077/photo/beautiful-aerial-view-of-downtown-vancouver-skyline-british-columbia-canada-at-sunset.jpg?s=612x612&w=0&k=20&c=j1OQOusYL_3UsWHFv3JqY9N_-5jW69l3Z-7TgZ49k_c=";
@@ -28,6 +29,7 @@ export default function Serv() {
     return <div className="text-center text-red-500">Error: {error.message}</div>;
   }
 
+
   // If `id` exists, find the specific service
   if (id) {
     const service = services?.find((service) => service._id === id);
@@ -35,7 +37,7 @@ export default function Serv() {
     if (!service) {
       return <div className="text-center">Service not found</div>;
     }
-
+   
     return (
       <div>
         <ScrollToTop/>
