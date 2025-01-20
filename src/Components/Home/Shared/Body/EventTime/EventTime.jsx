@@ -63,7 +63,7 @@ export default function EventTime() {
     <div>
       <section
         ref={sectionRef}
-        className="py-8 text-black dark:bg-gray-800 md:py-16"
+        className="py-8 text-black  md:py-16"
       >
         <div className="box-content max-w-5xl px-5 mx-auto">
           <div className="flex flex-col items-center -mx-5 md:flex-row">

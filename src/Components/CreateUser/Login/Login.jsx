@@ -68,7 +68,7 @@ export default function Login() {
       {/* Image Section */}
       <div className="hidden md:block md:w-1/2">
         <img
-          src={"../../../../public/signIn.svg"}
+          src={"https://res.cloudinary.com/dx8o5d32h/image/upload/v1737286973/undraw_my-password_iyga_ummwvb.svg"}
           alt="Secure Login"
           className="max-w-full h-auto"
         />

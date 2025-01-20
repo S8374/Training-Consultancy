@@ -159,7 +159,7 @@ export default function Header() {
         ) : (
           <NavbarItem>
             <NavLink to={"/login"}>
-              <Button className="bg-blue-500 text-white">Login</Button>
+              <button className="bg-blue-500 px-3 py-2 rounded-lg hover:opacity-50 text-white">Login</button>
             </NavLink>
           </NavbarItem>
         )}
@@ -213,7 +213,7 @@ export default function Header() {
         ) : (
           <NavbarItem>
             <NavLink to={"/login"}>
-              <Button className="bg-blue-500 text-white">Login</Button>
+              <button className="bg-blue-500 px-3 py-2 rounded-lg hover:opacity-50 text-white">Login</button>
             </NavLink>
           </NavbarItem>
         )}

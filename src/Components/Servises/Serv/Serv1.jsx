@@ -34,11 +34,11 @@ export default function ServiceImage() {
                 </div>
                 <div className="lg:w-1/2 xl:w-3/5">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-                        <img src="https://media.istockphoto.com/id/1454530399/photo/business-people-in-the-office.jpg?s=612x612&w=0&k=20&c=qbzcFUSdOJCXk349s7nQJOn7jrWAhc5ViaIC0l4HFfY=" alt="Professional team working" className="rounded-lg shadow-2xl dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src="https://media.istockphoto.com/id/1454530399/photo/business-people-in-the-office.jpg?s=612x612&w=0&k=20&c=qbzcFUSdOJCXk349s7nQJOn7jrWAhc5ViaIC0l4HFfY=" alt="Professional team working" className="rounded-lg shadow-2xl  aspect-video sm:min-h-96" />
                     </div>
                 </div>
             </div>
-            <section className="bg-white dark:bg-gray-900">
+            <section className="bg-white ">
 
 
     <div className="container mt-8 px-6 py-16 mx-auto text-center">

@@ -222,7 +222,7 @@ export default function ApplyForm({ setIsModalOpen, serviceId ,setAppliedService
                         type="submit"
                         disabled={isSubmitting}
                     >
-                        {isSubmitting ? 'Submitting...' : 'Submit'}
+                        {isSubmitting ? 'Waiting...' : 'Confirm Applied'}
                     </button>
                 </div>
             </form>

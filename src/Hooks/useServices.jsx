@@ -10,7 +10,10 @@ export const UseServices = () => {
   return useQuery({
     queryKey: ['services'],
     queryFn: fetchServices,
+    retry: false, // Prevent infinite retries during debugging
+    onError: (error) => console.error('Error fetching services:', error),
   });
+  
 };
 
-//https://training-consultancy-server.vercel.app/services
+

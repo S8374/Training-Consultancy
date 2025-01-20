@@ -13,20 +13,24 @@ export default function Services() {
   const [selectedServiceId, setSelectedServiceId] = useState(null);
   const [Applied] = useApply();
   const { user } = UseAuth();
-  
+   console.log('all services', services)
   // State to track which services have been applied for based on user's email
   const [appliedServices, setAppliedServices] = useState([]);
 
   // Find the current user applied data
   useEffect(() => {
-    if (Applied) {
-      // Set the applied services for the current user, including the service ID and user email
+    if (Applied && user) {
+      // Set the applied services for the current user
       setAppliedServices(
-        Applied.filter(item => item.userEmail === user?.email).map(item => item.applyIDcard)
+        Applied.filter((item) => item.email === user?.email).map((item) => item.applyIDcard)
       );
+    
+    } else {
+      // Reset the applied services if the user logs out
+      setAppliedServices([]);
     }
   }, [Applied, user]);
-
+  console.log('current user applied form' , appliedServices)
   const handleSeeMore = () => {
     setIsButtonLoading(true);
     setTimeout(() => {
@@ -72,8 +76,8 @@ export default function Services() {
   return (
     <div>
       {/* Header Section */}
-      <section className="bg-white dark:bg-gray-900">
-        <div className="h-[32rem] dark:bg-gray-800">
+      <section className="bg-white">
+        <div className="h-[32rem] ">
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
               Apply For Visa
@@ -84,7 +88,7 @@ export default function Services() {
               <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
             </div>
             <p className="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
-              Explore our premium services tailored to meet your needs with exceptional quality and customer support.
+              Explore our premium services tailored to meet your needs with exceptional quality and  support.
             </p>
           </div>
         </div>
@@ -95,7 +99,7 @@ export default function Services() {
             {services.slice(0, visibleCount).map((service) => (
               <div
                 key={service._id}
-                className="flex flex-col items-center p-4 border sm:p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                className="flex flex-col items-center p-4 border sm:p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300  bg-white "
               >
                 <NavLink to={`/services/${service._id}`}>
                   <img
