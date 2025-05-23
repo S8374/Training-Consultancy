@@ -19,7 +19,7 @@ export default function AboutServices() {
                   "url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
               }}
             >
-              <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+              <div className=" p-6 rounded-lg text-center text-white">
                 <h3 className="text-lg font-semibold">John Doe</h3>
                 <p className="mt-2 text-sm">Chief Executive Officer</p>
               </div>
@@ -33,7 +33,7 @@ export default function AboutServices() {
                   "url('https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
               }}
             >
-              <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+              <div className=" p-6 rounded-lg text-center text-white">
                 <h3 className="text-lg font-semibold">Jane Smith</h3>
                 <p className="mt-2 text-sm">Head of Innovation</p>
               </div>
@@ -47,7 +47,7 @@ export default function AboutServices() {
                   "url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
               }}
             >
-              <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+              <div className=" p-6 rounded-lg text-center text-white">
                 <h3 className="text-lg font-semibold">Alex Johnson</h3>
                 <p className="mt-2 text-sm">Finance Manager</p>
               </div>
@@ -61,7 +61,7 @@ export default function AboutServices() {
                   "url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
               }}
             >
-              <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+              <div className="p-6 rounded-lg text-center text-white">
                 <h3 className="text-lg font-semibold">Emily Davis</h3>
                 <p className="mt-2 text-sm">Marketing Specialist</p>
               </div>
@@ -75,7 +75,7 @@ export default function AboutServices() {
                   "url('https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
               }}
             >
-              <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+              <div className=" p-6 rounded-lg text-center text-white">
                 <h3 className="text-lg font-semibold">Chris Lee</h3>
                 <p className="mt-2 text-sm">Customer Relations</p>
               </div>

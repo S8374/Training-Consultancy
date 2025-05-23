@@ -1,136 +1,119 @@
 import { FaTwitter, FaFacebookSquare, FaDribbble, FaGithub } from 'react-icons/fa';
+import { useTheme } from '../../../ThemProvider/ThemProvider';
 
 export default function Footer() {
+  const { darkMode } = useTheme();
+
   return (
-    <footer className="relative bg-[#F3F4F6] text-gray-300 pt-8 pb-6">
+    <footer className={`${darkMode ? 'bg-gray-900 text-gray-200' : 'bg-[#F3F4F6] text-gray-800'} pt-10 pb-6 transition-colors duration-300`}>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-semibold text-black uppercase font1 ">Let's keep in touch!</h4>
-            <h5 className="text-lg mt-2 mb-4 text-black">
+          {/* Contact Section */}
+          <div className="w-full lg:w-6/12 px-4 mb-8 lg:mb-0">
+            <h4 className={`text-3xl font-bold uppercase ${darkMode ? 'text-white' : 'text-gray-900'}`}>Let's keep in touch!</h4>
+            <p className={`text-lg mt-2 mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
               Find us on any of these platforms, we respond within 1-2 business days.
-            </h5>
+            </p>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="#"
-                className="text-black  hover:bg-blue-500 hover:text-white shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="#"
-                className="text-black  hover:bg-blue-700 hover:text-white shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-              >
-                <FaFacebookSquare />
-              </a>
-              <a
-                href="#"
-                className="text-black  hover:bg-pink-500 hover:text-white shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-              >
-                <FaDribbble />
-              </a>
-              <a
-                href="#"
-                className="text-black  hover:bg-gray-400 hover:text-white shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none"
-              >
-                <FaGithub />
-              </a>
+              {[
+                { icon: <FaTwitter />, color: 'bg-blue-500' },
+                { icon: <FaFacebookSquare />, color: 'bg-blue-700' },
+                { icon: <FaDribbble />, color: 'bg-pink-500' },
+                { icon: <FaGithub />, color: 'bg-gray-700' }
+              ].map((item, index) => (
+                <a
+  key={index}
+  href="#"
+  className={`h-10 w-10 flex items-center justify-center rounded-full shadow-lg transition-all duration-300
+    ${darkMode 
+      ? 'bg-gray-800 text-white hover:bg-white hover:text-black' 
+      : `${item.color} text-white hover:bg-gray-900 hover:text-white`
+    }`}
+>
+  {item.icon}
+</a>
+
+              ))}
             </div>
           </div>
+
+          {/* Links Section */}
           <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-black text-sm font-semibold mb-2">Useful Links</span>
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Github
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Free Products
-                    </a>
-                  </li>
+            <div className="flex flex-wrap items-start">
+              {/* Useful Links */}
+              <div className="w-full sm:w-6/12 lg:w-4/12 px-4 mb-6">
+                <h5 className={`uppercase text-sm font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Useful Links</h5>
+                <ul>
+                  {['About Us', 'Blog', 'Github', 'Free Products'].map((link, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className={`block pb-2 text-sm font-medium transition-colors duration-300 
+                          ${darkMode ? 'text-gray-400 hover:text-white' : 'text-black hover:text-blue-600'}`}
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div className="w-full lg:w-4/12 px-4">
-                <span className="block uppercase text-black text-sm font-semibold mb-2">Other Resources</span>
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      MIT License
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Terms & Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="text-black hover:text-white font-semibold block pb-2 text-sm"
-                      href="#"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
+
+              {/* Other Resources */}
+              <div className="w-full sm:w-6/12 lg:w-4/12 px-4 mb-6">
+                <h5 className={`uppercase text-sm font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Other Resources</h5>
+                <ul>
+                  {['MIT License', 'Terms & Conditions', 'Privacy Policy', 'Contact Us'].map((link, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className={`block pb-2 text-sm font-medium transition-colors duration-300 
+                          ${darkMode ? 'text-gray-400 hover:text-white' : 'text-black hover:text-blue-600'}`}
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* Other Resources */}
+              <div className="w-full sm:w-6/12 lg:w-4/12 px-4 mb-6">
+                <h5 className={`uppercase text-sm font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Other Resources</h5>
+                <ul>
+                  {['MIT License', 'Terms & Conditions', 'Privacy Policy', 'Contact Us'].map((link, i) => (
+                    <li key={i}>
+                      <a
+                        href="#"
+                        className={`block pb-2 text-sm font-medium transition-colors duration-300 
+                          ${darkMode ? 'text-gray-400 hover:text-white' : 'text-black hover:text-blue-600'}`}
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-700" />
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
+
+        {/* Divider */}
+        <hr className={`my-6 ${darkMode ? 'border-gray-700' : 'border-gray-300'}`} />
+
+        {/* Footer Bottom */}
+        <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-black font-semibold py-1">
-              Copyright © {new Date().getFullYear()} Notus JS by
+            <p className={`text-sm font-semibold ${darkMode ? 'text-gray-500' : 'text-gray-700'}`}>
+              © {new Date().getFullYear()} Notus JS by
               <a
                 href="https://www.creative-tim.com?ref=njs-profile"
-                className="text-blue-400 hover:text-white ml-1"
+                className={`ml-1 font-bold transition-colors duration-300 
+                  ${darkMode ? 'text-blue-400 hover:text-white' : 'text-blue-500 hover:text-black'}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Sabbir Mridha
-              </a>
-              .
-            </div>
+              </a>.
+            </p>
           </div>
         </div>
       </div>

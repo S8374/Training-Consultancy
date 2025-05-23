@@ -1,72 +1,77 @@
+import { useTheme } from "../../../../ThemProvider/ThemProvider";
+import { motion } from "framer-motion";
+import { FiCheckCircle } from "react-icons/fi";
 
 export default function Service() {
-    return (
-        <div>
-            <header className="bg-white ">
+  const { darkMode } = useTheme();
 
+  const features = [
+    { title: "Premium selection", icon: <FiCheckCircle className="text-indigo-500" /> },
+    { title: "Insurance coverage", icon: <FiCheckCircle className="text-indigo-500" /> },
+    { title: "All legal documents", icon: <FiCheckCircle className="text-indigo-500" /> },
+    { title: "Certified US dealers", icon: <FiCheckCircle className="text-indigo-500" /> },
+    { title: "Payment security", icon: <FiCheckCircle className="text-indigo-500" /> },
+    { title: "Fast & express shipping", icon: <FiCheckCircle className="text-indigo-500" /> }
+  ];
 
-                <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-                    <div className="w-full lg:w-1/2">
-                        <div className="lg:max-w-lg">
-                            <h1 className="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">Find your premium new   from US</h1>
-                            <p className="mt-4 text-gray-600 dark:text-gray-300">We work with the best remunated glasses dealers in US to find your new glasses.</p>
-                            <div className="grid gap-6 mt-8 sm:grid-cols-2">
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
+  return (
+    <section className={`w-full overflow-hidden ${darkMode ? 'bg-gradient-to-br from-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-50 to-white'} transition-colors duration-500`}>
+      <div className="container mx-auto px-6 py-20 lg:flex lg:items-center lg:justify-between lg:gap-12 xl:gap-24">
+        
+        {/* Left Content */}
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="lg:w-1/2 space-y-8"
+        >
+          <div className="space-y-4">
+            <span className="inline-block px-4 py-1.5 text-xs font-semibold tracking-wider text-indigo-600 bg-indigo-100 rounded-full dark:bg-indigo-900/50 dark:text-indigo-300">
+              PREMIUM SERVICES
+            </span>
+            <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-[3.5rem] lg:leading-[1.15]">
+              Discover Exceptional <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">Eyewear Solutions</span>
+            </h1>
+            <p className={`text-lg leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'} max-w-lg`}>
+              We collaborate with top-rated optical specialists across North America to deliver premium eyewear tailored to your vision needs and style preferences.
+            </p>
+          </div>
 
-                                    <span className="mx-3">Premium selection</span>
-                                </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className={`flex items-start space-x-3 p-4 rounded-xl transition-all duration-300 ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'} shadow-sm hover:shadow-md border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}
+              >
+                <div className="mt-0.5">{feature.icon}</div>
+                <span className="font-medium">{feature.title}</span>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-
-                                    <span className="mx-3">Insurance</span>
-                                </div>
-
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-
-                                    <span className="mx-3">All legal documents</span>
-                                </div>
-
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-
-                                    <span className="mx-3">From US glasses dealers</span>
-                                </div>
-
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-
-                                    <span className="mx-3">Payment Security</span>
-                                </div>
-
-                                <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
-                                    <svg className="w-5 h-5 mx-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-
-                                    <span className="mx-3">Fast shipping (+ Express)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
-                        <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://media.istockphoto.com/id/1830126474/photo/portrait-of-a-business-man-sitting-in-an-office.jpg?s=612x612&w=0&k=20&c=jFJl6x5NUZOXEH230n2asejE-vDZ0YtATM0pbfJFTgk=" alt="glasses photo" />
-                    </div>
-                </div>
-            </header>
-        </div>
-    );
+        {/* Right Image */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-12 lg:mt-0 relative lg:w-1/2"
+        >
+          <div className={`absolute -z-10 w-full h-full rounded-3xl ${darkMode ? 'bg-indigo-900/20' : 'bg-indigo-100'} -rotate-6 scale-105`}></div>
+          <img
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Professional eyewear specialist"
+            className="relative rounded-2xl shadow-2xl w-full max-w-2xl object-cover aspect-square lg:aspect-video lg:h-[500px]"
+          />
+          <div className={`absolute -bottom-6 -right-6 w-32 h-32 rounded-full ${darkMode ? 'bg-purple-600/20' : 'bg-indigo-100'} blur-3xl`}></div>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
